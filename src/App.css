@@ -1,38 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
 .App {
+  background: url("https://media.istockphoto.com/photos/twotone-paper-red-and-orange-background-picture-id1151726153?b=1&k=20&m=1151726153&s=170667a&w=0&h=y5n_7Tfb_o0jQMACqYAaOOcsXIzOMoFGkjA5m5DgpMk=")
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  color: rgb(5, 5, 86);
+}
+
+.container {
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90%;
+  width: 90%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  height: 80vh;
+  padding-top: 16vh;
+}
+
+h1,h6{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ gap: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* =====================================Mobile Device ======================================= */
+
+@media screen and (max-width: 500px) {
+  .App {
+    background: url("https://media.istockphoto.com/photos/twotone-paper-red-and-orange-background-picture-id1151726153?b=1&k=20&m=1151726153&s=170667a&w=0&h=y5n_7Tfb_o0jQMACqYAaOOcsXIzOMoFGkjA5m5DgpMk=")
+      no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container {
+    background: transparent;
+    height: 95%;
+    width: 90%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    display: inline;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left {
+    all: unset;
   }
+
+  img{
+    padding-top: 2rem;
+   height: 100px;
+   width: 100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  h1,h6,h2{
+    text-align: center;
+ }
+
+ p{
+    text-align: center;
+ }
+
+ .right{
+ }
 }

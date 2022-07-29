@@ -1,0 +1,27 @@
+.SignUp{
+    position: relative;
+    padding-top: 12vh;
+    padding-left: 180px;
+}
+
+#signup-button{
+    margin-top: 6vh;
+}
+
+/* =====================================Mobile Device ======================================= */
+
+@media screen and (max-width: 600px) {
+    .SignUp{
+        position: relative;
+        padding-left: 10px;
+        padding-top: 0.5vh;
+    }
+
+    p{
+        text-align: left;
+    }
+
+    button{
+        margin-top: 4vh;
+    }
+}

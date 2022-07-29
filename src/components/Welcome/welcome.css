@@ -1,0 +1,16 @@
+.WelcomePage{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =====================================Mobile Device ======================================= */
+
+@media screen and (max-width: 600px) {
+    .WelcomePage{
+        /* position: relative; */
+        padding-top: 20vh;
+        padding-left: 0px;
+    }
+}
